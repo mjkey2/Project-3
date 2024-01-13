@@ -5,6 +5,7 @@
 
 CREATE TABLE "year" (
     "year" INTEGER   NOT NULL,
+    "id" VARCHAR   NOT NULL,
     "quarter" INTEGER   NOT NULL,
     CONSTRAINT "pk_year" PRIMARY KEY (
         "year"
@@ -37,7 +38,7 @@ CREATE TABLE "area" (
 CREATE TABLE "industry" (
     "name" VARCHAR   NOT NULL,
     "area_fips" VARCHAR   NOT NULL,
-    "year" INTEGER   NOT NULL,
+    "id" VARCHAR   NOT NULL,
     "establishments" INTEGER   NOT NULL,
     "total_employed" INTEGER   NOT NULL,
     "total_wages" INTEGER   NOT NULL,
@@ -47,8 +48,8 @@ CREATE TABLE "industry" (
 ALTER TABLE "industry" ADD CONSTRAINT "fk_industry_area_fips" FOREIGN KEY("area_fips")
 REFERENCES "area" ("area_fips");
 
-ALTER TABLE "industry" ADD CONSTRAINT "fk_industry_year" FOREIGN KEY("year")
-REFERENCES "year" ("year");
+ALTER TABLE "industry" ADD CONSTRAINT "fk_industry_id" FOREIGN KEY("id")
+REFERENCES "year" ("id");
 
 ALTER TABLE "industry" ADD CONSTRAINT "fk_industry_total_wages" FOREIGN KEY("total_wages")
 REFERENCES "wages" ("total_wages");
