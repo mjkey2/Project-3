@@ -1,0 +1,9 @@
+Below are the 5 tables I created, stemming from the CleanData file
+
+1. Location Information Table
+2. Establishment Metrics Table
+3. Employment Metrics Table
+4. Wage Metrics Table
+5. Quarterly Change Metrics Table
+
+Each table includes an id column as the primary key to maintain relationships between the tables. The design of the tables will allow us to focus our analysis on specific areas like location, employment, wages, and changes over time, etc.
