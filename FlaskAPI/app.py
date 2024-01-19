@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 #setup application (name references this file)
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project3.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://username:password@localhost:5432/dbname'
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
