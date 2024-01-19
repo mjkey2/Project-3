@@ -13,6 +13,8 @@ db = SQLAlchemy(app)
 @app.route('/')
 def dashboard()
 	#list all available routes of data exploration
+	return render_template('index.html')
+
 
 @app.route('query')
 
