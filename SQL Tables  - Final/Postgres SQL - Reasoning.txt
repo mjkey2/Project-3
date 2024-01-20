@@ -1,0 +1,13 @@
+Tasked with storing the transformed datasets into a database. The database system of choice was postgres SQL. 
+
+REASONS FOR CHOOSING POSTGRES SQL
+
+ease of use
+ability to easily import our CSV files into tables
+Very straightforward
+Intuitive 
+Its a favorable tool for querying data
+generating visuals allowing us to ensure the data is sorted and categorized neatly. 
+
+It offers amazing support for our growing data. We found ourselves on this path of trying to create multiple efficient tables with 
+the transformed datasets. We felt Postgres SQL is more than capable handling the scalability of our data and supporting our research. 
